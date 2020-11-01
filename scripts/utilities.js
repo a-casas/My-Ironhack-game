@@ -33,6 +33,7 @@ function animate(){
 		player.update()
 		player.walk()
 		objectTest.draw()
+		objectTest2.draw()
 		//collision(player, buda)	
 	}
 	
