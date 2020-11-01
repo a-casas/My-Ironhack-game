@@ -13,8 +13,8 @@ class Player {
 		this.speed = 5
 		this.image = new Image()
 		this.image.src = "../images/characters/hulk.png"
-
 	}
+
 	update(){
 		//console.log('update')
 		if (keys[87] && this.y > 110){ //W up
@@ -70,3 +70,7 @@ class Player {
 }
 
 const player = new Player()
+
+
+
+

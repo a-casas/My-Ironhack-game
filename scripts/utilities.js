@@ -32,11 +32,10 @@ function animate(){
 		player.drawSize()
 		player.update()
 		player.walk()
-		budaPuzzle.drawBuda()
-		fogBackground.renderFog()
-		
+		objectTest.draw()
 		//collision(player, buda)	
 	}
+	
 	
 	
 }
