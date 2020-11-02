@@ -50,12 +50,14 @@ class Player {
 		
 		if (this.y > 295 && this.y <= 330) {
 			ctx3.drawImage(this.image, this.frameX * this.spriteWidth, this.frameY * this.spriteHeight, this.spriteWidth, this.spriteHeight, this.x-13, this.y-30, 1.25*this.width+this.y/500, 1.25*this.height+this.y/500 )
-		} else if (this.y > 330) {
+		} else if (this.y > 330 && this.y < 370) {
 			ctx3.drawImage(this.image, this.frameX * this.spriteWidth, this.frameY * this.spriteHeight, this.spriteWidth, this.spriteHeight, this.x-24, this.y-60, 1.5*this.width+this.y/500, 1.5*this.height+this.y/500 )
+		} else if (this.y >= 370) {
+			ctx3.drawImage(this.image, this.frameX * this.spriteWidth, this.frameY * this.spriteHeight, this.spriteWidth, this.spriteHeight, this.x-36, this.y-80, 1.80*this.width+this.y/500, 1.80*this.height+this.y/500 )
 		} else if (this.y < 210 && this.y >= 150) {
 			ctx3.drawImage(this.image, this.frameX * this.spriteWidth, this.frameY * this.spriteHeight, this.spriteWidth, this.spriteHeight, this.x+10, this.y+20, 0.80*this.width+this.y/500, 0.80*this.height+this.y/500 )
 		} else if (this.y < 150) {
-			ctx3.drawImage(this.image, this.frameX * this.spriteWidth, this.frameY * this.spriteHeight, this.spriteWidth, this.spriteHeight, this.x+15, this.y+40, 0.65*this.width+this.y/500, 0.65*this.height+this.y/500 )
+			ctx3.drawImage(this.image, this.frameX * this.spriteWidth, this.frameY * this.spriteHeight, this.spriteWidth, this.spriteHeight, this.x+15, this.y+40, 0.75*this.width+this.y/500, 0.75*this.height+this.y/500 )
 		} else {
 			ctx3.drawImage(this.image, this.frameX * this.spriteWidth, this.frameY * this.spriteHeight, this.spriteWidth, this.spriteHeight, this.x, this.y, this.width, this.height )
 		}
@@ -70,6 +72,16 @@ class Player {
 }
 
 const player = new Player()
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -14,10 +14,10 @@ const ctx3 = canvas3.getContext('2d')
 canvas3.width = 1000
 canvas3.height = 500
 
-const canvas4 = document.getElementById('canvas4')
-const ctx4 = canvas4.getContext('2d')
-canvas4.width = 1000
-canvas4.height = 500
+// const canvas4 = document.getElementById('canvas4')
+// const ctx4 = canvas4.getContext('2d')
+// canvas4.width = 1000
+// canvas4.height = 500
 
 const canvas5 = document.getElementById('canvas5')
 const ctx5 = canvas5.getContext('2d')
@@ -34,8 +34,9 @@ const maxParticles = 300
 const ripplesArray = []
 const objectsArr = []
 const myInventoryArr = []
-
+const collidesArr = []
 
 
 //Images & effects
+
 

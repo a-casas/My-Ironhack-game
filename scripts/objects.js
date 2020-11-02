@@ -63,32 +63,8 @@
 
 
 
-
-// class FogBackground {
-// 	constructor() {
-// 		this.x = 0 
-// 		this.y = 0
-// 		this.width = 1000
-// 		this.height = 500
-// 		this.image = new Image()
-// 		this.img.src = "../images/fog.png"	
-// 	}
-	
-//     renderFog(){
-// 		ctx3.fillStyle = 'red'
-// 		ctx3.drawImage(this.image, this.width, this.height)
-		
-//     //     if(x <= -499){
-//     //         x = 0;
-//     //     }
-//     // }
-// }
-
-
-
-
 class GameObject {
-	constructor(x, y, width, height, name, picture){
+	constructor(x, y, width, height, name, picture, value){
 		this.x = x
 		this.y = y
 		this.width = width
@@ -96,15 +72,17 @@ class GameObject {
 		this.name = name
 		this.image = new Image()
 		this.image.src = picture
+		this.value = value
 	}
 	draw(){
-		ctx2.fillStyle = 'blue'
-		ctx2.fillRect(this.x, this.y, this.width, this.height, this.name, this.image, this.picture)
-		ctx2.drawImage(this.image, this.x, this.y, this.width, this.height)
+		ctx2.fillStyle = 'green'
+		ctx2.fillRect(this.x, this.y, this.width, this.height, this.name, this.image, this.picture) //to test sprite alignment VS rectangle alignment
+		//ctx2.drawImage(this.image, this.x, this.y, this.width, this.height)
 	}
 }
-const objectTest = new GameObject(222, 222, 100, 100, "vase", "../images/vase.png")
-const objectTest2 = new GameObject(130, 225, 100, 100, "vase2", "../images/vase.png")
+const objectTest = new GameObject(222, 222, 60, 80, "xObject", "../images/vase.png", 30)
+const objectTest2 = new GameObject(750, 220, 50, 70, "yObject", "../images/vase.png", 60)
+const objectTest3 = new GameObject(500, 200, 40, 50, "zObject", "../images/vase.png", 90)
 
 
 

@@ -34,7 +34,11 @@ function animate(){
 		player.walk()
 		objectTest.draw()
 		objectTest2.draw()
-		//collision(player, buda)	
+		objectTest3.draw()
+		collision(player, objectTest)
+		collision(player, objectTest2)
+		collision(player, objectTest3)
+		// fog.renderFog()	
 	}
 	
 	
@@ -46,13 +50,61 @@ startAnimating(18)
 
 // //Collide detection. If any of these statements is true there is not collision
 function collision(obj1, obj2){
-	if (obj1.x > obj2.x + obj2.width || obj1.x + obj1.width < obj2.x || obj1.y > obj2.y + obj2.height || obj1.y + obj1.height < obj2.y){
+	if (obj1.x > obj2.x + obj2.width || obj1.x + obj1.width < obj2.x || obj1.y+obj1.height > obj2.y + obj2.height || obj1.y + obj1.height < obj2.y){
 		
-		console.log('not collides!')
+		
 	} else {
-		console.log('collides')
+		
+		if (!collidesArr.includes(obj2.value)){
+			collidesArr.push(obj2.value)
+		}
+		// console.log(`collides with ${obj2.name}`)
+		console.log(collidesArr)
 	}	
 }
+
+let uniqueCollisionsArr = []
+
+
+function onlyUnique(value, index, self) {
+	return self.indexOf(value) === index;
+  }
+                                         
+  // usage example:
+//   var a = ['a', 1, 'a', 2, '1'];
+  let unique = collidesArr.filter(onlyUnique);
+  
+  console.log(unique); // ['a', 1, 2, '1']
+
+
+
+
+
+// function getUniqueCollisions(arr){
+	
+	
+// 	// Loop through array values
+// 	for(i=0; i < arr.length; i++){
+// 		if(arr.indexOf(arr[i]) === -1) {
+// 			arr.push(arr[i])
+// 		}
+// 	}
+// 	return arr
+// }
+// getUniqueCollisions(uniqueCollisionsArr)
+
+// for (let i in uniqueCollisionsArr){
+//     let list = str[i].split(',').map(Number);
+//     console.log(list);
+//     let isSorted = true;
+//     for(var j = 0 ; j < list.length - 1 ; j++){
+//         if(list[j] > list[j+1]) {
+//             isSorted = false
+//             break
+//         }
+//     }
+//     console.log(isSorted);
+// }
 
 // function avoidCollision(){
 // if (collision(player, buda)){
@@ -79,4 +131,5 @@ function collision(obj1, obj2){
 //     return(true);
 
 // }
+
 

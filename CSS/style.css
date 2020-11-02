@@ -26,47 +26,8 @@ canvas {
 	background: url('/images/first-plane.png')
 }
 
-
-#messages{
-	background: black;
-	color: white;
-	border: 3px ridge gray;
-	border-radius: 10px;
-	padding: 5px;
-	visibility: hidden;
-	font-family:"Lucida Console";
-	font-style: oblique;
-	font-size: 1.5em;
-	text-shadow: 1px 5px 5px gray;
-	opacity: 0.1;
-	position: absolute;
-	-webkit-animation: 
+#canvas4 {
+	opacity:0.3;
 }
 
-	@-webkit-keyframes buble_appear 
-	{
-	0% {
-	visibility: visible;
-	-webkit-transform: scale(0.05);	}	
-	20% {
-	visibility: visible;
-	-webkit-transform: scale(1.0); }
-	40% {
-	opacity: 0.8;
-	visibility: visible;
-	-webkit-transform: scale(1.0); }
-	50% {
-	opacity: 0.85;
-	}
-	60% {
-	opacity: 0.8;
-	visibility: visible;
-	-webkit-transform: scale(1.0); }
-	80% {
-	visibility: visible;
-	-webkit-transform: scale(1.0); }
-	100% {
-	opacity: 0.1;
-	visibility: visible;
-	-webkit-transform: scale(0.05);	}
-	}
+
