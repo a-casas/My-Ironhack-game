@@ -6,7 +6,7 @@
 	width: 1000px;
 	height: 500px;
 	transform: translate(-50%, -50%);
-	background: url('/images/background.png')
+	background: url('../images/background.png')
 	
 }
 
@@ -25,12 +25,12 @@ canvas {
 
 
 #canvas5 {
-	background: url('/images/first-plane.png')
+	background: url('../images/first-plane.png')
 }
 
 #canvas4 {
 	opacity:0.9;
-	background: url('/images/colorfog.png') repeat 0 0;
+	background: url('../images/colorfog.png') repeat 0 0;
   	width: 100%;
   	margin: 0;
   	height: 500px;
