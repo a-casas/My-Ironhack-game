@@ -22,15 +22,19 @@ window.onresize = function (e) {
   reOffset();
 };
 var hotspots = [
+  { x: 143, y: 234, radius: 25, tip: 'A ray of sunlight bounces from that mirror to the ground' },
+  { x: 426, y: 458, radius: 25, tip: 'A skull with a label: "He tried to finish the first Ironhack project on time"' },
+  { x: 728, y: 188, radius: 30, tip: 'Javi\'s diving gear. Do not touch!' },
   { x: 507, y: 141, radius: 40, tip: "A small ray of light filters through the rock, illuminating an old stone balanced buddha." },
-  { x: 734, y: 458, radius: 20, tip: "It is a small stone pagoda. Looks very old." },
+  { x: 734, y: 458, radius: 25, tip: "It is a small stone pagoda. Looks very old." },
   { x: 424, y: 172, radius: 10, tip: "A wooden Daruma doll representing the founder of Zen Buddhism" },
-  { x: 445, y: 175, radius: 10, tip: '"At the end of the day I look for a place to sleep under the bright stars, waiting for a new awakening."' },
+  { x: 445, y: 175, radius: 10, tip: '"At the end of the day I look for a place to sleep under the bright stars, hoping for a new awakening."' },
   { x: 507, y: 226, radius: 20, tip: "A small stone platform. It has a Yin-Yang symbol engraved" },
   { x: 844, y: 162, radius: 20, tip: "A mineral lodged in the rock. It's very bright!" },
   { x: 880, y: 228, radius: 20, tip: "It looks like a little sleeping buddha." },
-  { x: 582, y: 459, radius: 20, tip: 'An old manuscript: "The first thing I do every day is appreciate the sunlight." The following pages are missing...' },
-  { x: 178, y: 173, radius: 40, tip: '"Bottomless Development Well". It\'s scary ...'},
+  { x: 582, y: 459, radius: 20, tip: 'The diary of a wise old man: "Even chaos follows an ORDER that you do not understand" The following pages are missing.' },
+  { x: 970, y: 472, radius: 24, tip: 'A page of the diary: "The first thing I do every day is appreciate the sunlight."' },
+  { x: 190, y: 173, radius: 30, tip: '"Development Bottomless Well". It\'s scary ...'},
   { x: 276, y: 138, radius: 14, tip: "Into the well: Alba, Adriá, Christian, David, Íñigo, Ivan C, Ivan U, Jesús, Mark, Pablo, Raquel, Sara, Sergio, Víctor, Adrián" },
 ];
 draw();
@@ -43,7 +47,7 @@ function draw() {
     ctx.beginPath();
     ctx.arc(h.x, h.y, h.radius, 0, Math.PI * 2)
     ctx.closePath();
-    ctx.stroke();
+    //ctx.stroke();
   }
 }
 function handleMouseMove(e) {

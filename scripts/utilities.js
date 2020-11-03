@@ -57,14 +57,26 @@ function collision(obj1, obj2){
 		
 		if (!collidesArr.includes(obj2.value)){
 			collidesArr.push(obj2.value)
-			if (collidesArr.length === 3){
-				checkOrder(collidesArr)	
+			if (collidesArr.length === 2)
+				checkOrderForTwo(collidesArr)
+			if (collidesArr.length === 3)
+				checkOrder(collidesArr)
+			
+
 			}
 		}
 		// console.log(`collides with ${obj2.name}`)
 		console.log(collidesArr)
-	}	
+	}
+
+function checkOrderForTwo(arr){
+	if (arr[0] < arr[1] && arr[1] != 90){
+		return arr
+	} else {
+		arr.splice(0, arr.length)
+	}
 }
+
 function checkOrder(arr){
 	if (arr[0] < arr[1] && arr[1] < arr[2]){
 		canvas7.style.visibility='visible'
@@ -72,6 +84,29 @@ function checkOrder(arr){
 		collidesArr.splice(0, arr.length)
 	   }
 	}
+
+
+
+
+// } else {
+		
+// 	if (!collidesArr.includes(obj2.value)){
+// 		collidesArr.push(obj2.value)
+// 		if (collidesArr.length === 3){
+// 			checkOrder(collidesArr)	
+// 		}
+// 	}
+// 	// console.log(`collides with ${obj2.name}`)
+// 	console.log(collidesArr)
+// }	
+// }
+// function checkOrder(arr){
+// if (arr[0] < arr[1] && arr[1] < arr[2]){
+// 	canvas7.style.visibility='visible'
+// 	} else {
+// 	collidesArr.splice(0, arr.length)
+//    }
+// }
 // function resetCollidesArr(){
 // 	collidesArr = []
 // }
