@@ -12,7 +12,7 @@ class Player {
 		this.frameY = 0
 		this.speed = 5
 		this.image = new Image()
-		this.image.src = "../images/characters/hulk.png"
+		this.image.src = "./images/characters/hulk.png"
 	}
 
 	update(){
