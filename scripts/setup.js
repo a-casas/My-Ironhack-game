@@ -24,6 +24,7 @@ const ctx5 = canvas5.getContext('2d')
 canvas5.width = 1000
 canvas5.height = 500
 
+
 //Global variables
 const grid = 80
 let keys = []

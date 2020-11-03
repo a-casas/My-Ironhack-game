@@ -57,24 +57,75 @@ function collision(obj1, obj2){
 		
 		if (!collidesArr.includes(obj2.value)){
 			collidesArr.push(obj2.value)
+			if (collidesArr.length === 3){
+				checkOrder(collidesArr)	
+			}
 		}
 		// console.log(`collides with ${obj2.name}`)
 		console.log(collidesArr)
 	}	
 }
+function checkOrder(arr){
+	if (arr[0] < arr[1] && arr[1] < arr[2]){
+		canvas7.style.visibility='visible'
+		} else {
+		collidesArr.splice(0, arr.length)
+	   }
+	}
+// function resetCollidesArr(){
+// 	collidesArr = []
+// }
+// function drawEnd(){
+// 	ctx7.drawImage(endImage, canvas7.width, canvas7.height)
+// }
 
-let uniqueCollisionsArr = []
+const canvas7 = document.getElementById('canvas7')
+const ctx7 = canvas5.getContext('2d')
+// canvas7.width = 1000
+// canvas7.height = 500	
+// const endImage = new Image()
+// endImage.src = '../images/background.png'
 
 
-function onlyUnique(value, index, self) {
-	return self.indexOf(value) === index;
-  }
+
+
+// const isSorted = arr => arr.every((v,i,a) => !i || a[i-1] <= v);
+// const checkIfSorted = isSorted(collidesArr)
+
+// function winOrReset(arr, param){
+// 	if (param == true) {
+// 		console.log('you win')
+		
+// 	} else {
+// 		arr = [] //hacer reset de collides arr
+		
+// 	}
+// }
+
+// //console.log(checkIfSorted)
+// winOrReset(collidesArr, checkIfSorted)
+
+
+
+
+
+// function checkOrder(arr){
+// 	if (arr[0] > arr[1] && arr[1] > arr[2]){
+// 	console.log("you win")
+// }
+// }
+
+// checkOrder(collidesArr)
+
+// function onlyUnique(value, index, self) {
+// 	return self.indexOf(value) === index;
+//   }
                                          
-  // usage example:
-//   var a = ['a', 1, 'a', 2, '1'];
-  let unique = collidesArr.filter(onlyUnique);
+//   // usage example:
+// //   var a = ['a', 1, 'a', 2, '1'];
+//   let unique = collidesArr.filter(onlyUnique);
   
-  console.log(unique); // ['a', 1, 2, '1']
+//   console.log(unique); // ['a', 1, 2, '1']
 
 
 

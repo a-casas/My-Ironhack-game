@@ -76,13 +76,13 @@ class GameObject {
 	}
 	draw(){
 		ctx2.fillStyle = 'green'
-		ctx2.fillRect(this.x, this.y, this.width, this.height, this.name, this.image, this.picture) //to test sprite alignment VS rectangle alignment
-		//ctx2.drawImage(this.image, this.x, this.y, this.width, this.height)
+		//ctx2.fillRect(this.x, this.y, this.width, this.height, this.name, this.image, this.picture) //to test sprite alignment VS rectangle alignment
+		ctx2.drawImage(this.image, this.x, this.y, this.width, this.height)
 	}
 }
-const objectTest = new GameObject(222, 222, 60, 80, "xObject", "../images/vase.png", 30)
-const objectTest2 = new GameObject(750, 220, 50, 70, "yObject", "../images/vase.png", 60)
-const objectTest3 = new GameObject(500, 200, 40, 50, "zObject", "../images/vase.png", 90)
+const objectTest = new GameObject(150, 300, 60, 80, "xObject", "../images/emptyobjt.png", 30)
+const objectTest2 = new GameObject(800, 200, 50, 70, "yObject", "../images/emptyobjt.png", 60)
+const objectTest3 = new GameObject(480, 200, 40, 50, "zObject", "../images/emptyobjt.png", 90)
 
 
 

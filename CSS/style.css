@@ -22,12 +22,35 @@ canvas {
 	left: 0;		
 }
 
+
+
 #canvas5 {
 	background: url('/images/first-plane.png')
 }
 
 #canvas4 {
-	opacity:0.3;
+	opacity:0.9;
+	background: url('/images/colorfog.png') repeat 0 0;
+  	width: 100%;
+  	margin: 0;
+  	height: 500px;
+  	-webkit-animation: slide 20s linear infinite;
 }
 
 
+
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -1000px 0; }
+}
+
+
+#canvas7 {
+	visibility: hidden;
+	background: url('../images/end-canvas.gif')
+}
+
+#canvas3trigger3 {
+	visibility: hidden;
+	background: url('../images/90.png')
+}
