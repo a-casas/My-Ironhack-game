@@ -1,3 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&display=swap');
+
+body {
+	background: black;
+	font-family: 'Inconsolata', monospace;
+}
+
+h1 {
+	color: white;
+	font-size: 20px;
+}
+h2 {
+	color: white;
+	font-size: 17px;
+}
+
+p {
+	color: white;
+	font-size: 18px;
+}
+
+section {
+	display: flex;
+	align-items: flex-end;
+	
+}
+
 .wrapper {
 	border: 5px solid black;
 	top: 50%;
@@ -10,8 +37,34 @@
 	
 }
 
-body {
-	background: black;
+.wrapper0 {
+	border: 5px solid black;
+	top: 30%;
+	left: 50%;
+	position: absolute;
+	width: 1000px;
+	height: 500px;
+	transform: translate(-50%, -50%);	
+}
+
+.game-intro {
+	flex: 50%;
+	padding-right: 80px;
+	
+}
+
+.how-to-play {
+	flex: 50%;
+	
+}
+
+.button {
+	transition-duration: 0.4s;
+}
+  
+.button:hover {
+	background-color: #4CAF50; /* Green */
+	color: white;
 }
 
 canvas {
