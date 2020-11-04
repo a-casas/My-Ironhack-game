@@ -23,17 +23,20 @@ window.onresize = function (e) {
 };
 var hotspots = [
   { x: 143, y: 234, radius: 25, tip: 'A ray of sunlight bounces from that mirror to the ground' },
-  { x: 426, y: 458, radius: 25, tip: 'A skull with a label: "He tried to finish the first Ironhack project on time"' },
+  { x: 30, y: 205, radius: 40, tip: '"Family is forever" When did I learn Japanese?' },
+  { x: 846, y: 227, radius: 25, tip: 'Light does not reach this area. It\'s dark.' },
+  { x: 426, y: 458, radius: 25, tip: 'It\'s skull with a label: "He tried to finish the first Ironhack project on time"' },
   { x: 728, y: 188, radius: 30, tip: 'Javi\'s diving gear. Do not touch!' },
   { x: 507, y: 141, radius: 40, tip: "A small ray of light filters through the rock, illuminating an old stone balanced buddha." },
   { x: 734, y: 458, radius: 25, tip: "It is a small stone pagoda. Looks very old." },
-  { x: 424, y: 172, radius: 10, tip: "A wooden Daruma doll representing the founder of Zen Buddhism" },
-  { x: 445, y: 175, radius: 10, tip: '"At the end of the day I look for a place to sleep under the bright stars, hoping for a new awakening."' },
+  { x: 424, y: 172, radius: 10, tip: "It\'s a wooden Daruma doll representing the founder of Zen Buddhism" },
+  { x: 445, y: 175, radius: 10, tip: 'A page fragment: "..ght. When night falls, find a place under the bright stars and capture the energy of the universe"' },
   { x: 507, y: 226, radius: 20, tip: "A small stone platform. It has a Yin-Yang symbol engraved" },
-  { x: 844, y: 162, radius: 20, tip: "A mineral lodged in the rock. It's very bright!" },
-  { x: 880, y: 228, radius: 20, tip: "It looks like a little sleeping buddha." },
+  { x: 844, y: 162, radius: 20, tip: "The mineral is lodged in the rock. Despite the dark, it's very bright and seems to emit its own light." },
+  { x: 885, y: 228, radius: 15, tip: "It looks like a little sleeping buddha." },
+  { x: 716, y: 130, radius: 25, tip: 'A stone inscription: "The key to inner awakening is to channel your energies, find balance and get your life back."' },
   { x: 582, y: 459, radius: 20, tip: 'The diary of a wise old man: "Even chaos follows an ORDER that you do not understand" The following pages are missing.' },
-  { x: 970, y: 472, radius: 24, tip: 'A page of the diary: "The first thing I do every day is appreciate the sunlight."' },
+  { x: 970, y: 472, radius: 24, tip: '"To face life challenges you should get energy from any source. First, during the day, through sunli.." The page is torn'},
   { x: 190, y: 173, radius: 30, tip: '"Development Bottomless Well". It\'s scary ...'},
   { x: 276, y: 138, radius: 14, tip: "Into the well: Alba, Adriá, Christian, David, Íñigo, Ivan C, Ivan U, Jesús, Mark, Pablo, Raquel, Sara, Sergio, Víctor, Adrián" },
 ];
@@ -47,7 +50,7 @@ function draw() {
     ctx.beginPath();
     ctx.arc(h.x, h.y, h.radius, 0, Math.PI * 2)
     ctx.closePath();
-    //ctx.stroke();
+    ctx.stroke();
   }
 }
 function handleMouseMove(e) {

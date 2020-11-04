@@ -35,7 +35,7 @@ const collidesArr = []
 
 //Music & sound effects
 const music = new Audio()
-music.src = '/sounds/peritune-otogi2.mp3'
+music.src = './sounds/peritune-otogi2.mp3'
 music.play()
 music.volume = 0.1
 music.loop = true
@@ -46,7 +46,7 @@ music.loop = true
 // https://creativecommons.org/licenses/by/4.0/
 
 const steps = new Audio()
-steps.src = '/sounds/Running on Wet Surface.mp3'
+steps.src = './sounds/Running on Wet Surface.mp3'
 
 
 
