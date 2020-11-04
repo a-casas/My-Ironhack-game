@@ -50,7 +50,7 @@ function draw() {
     ctx.beginPath();
     ctx.arc(h.x, h.y, h.radius, 0, Math.PI * 2)
     ctx.closePath();
-    ctx.stroke();
+    //ctx.stroke();   //to check circles placement
   }
 }
 function handleMouseMove(e) {
