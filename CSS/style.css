@@ -83,6 +83,19 @@ canvas {
 	color: #4fb8fe;
 }
 
+.button.two {
+	position:absolute;
+  	bottom:-60px;
+ 	right:0;
+  	display: block;
+}
+
+.button.hints {
+	position:absolute;
+  	bottom:-60px;
+ 	right:120px;
+  	display: block;
+}
 
 #canvas5 {
 	background: url('../images/first-plane.png')

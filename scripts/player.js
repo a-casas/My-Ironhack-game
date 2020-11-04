@@ -71,9 +71,9 @@ class Player {
 	stepSound(){
 		if (this.moving === true){
 			steps.play()
-			if (this.y >= 360)
+			if (this.y >= 340)
 				steps.volume = 1
-			if (this.y < 360)
+			if (this.y < 340)
 				steps.volume = 0.2
 					
 		}
