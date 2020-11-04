@@ -30,12 +30,25 @@ const grid = 80
 let keys = []
 let frame = 0
 let gameSpeed = 1
-const particlesArr = []
-const maxParticles = 300
-const ripplesArray = []
 const objectsArr = []
-const myInventoryArr = []
 const collidesArr = []
+
+//Music & sound effects
+const music = new Audio()
+music.src = '/sounds/peritune-otogi2.mp3'
+music.play()
+music.volume = 0.1
+music.loop = true
+// Background music credits
+// Otogi2 by PeriTune | http://peritune.com
+// Music promoted by https://www.free-stock-music.com
+// Attribution 4.0 International (CC BY 4.0)
+// https://creativecommons.org/licenses/by/4.0/
+
+const steps = new Audio()
+steps.src = '/sounds/Running on Wet Surface.mp3'
+
+
 
 
 

@@ -68,6 +68,21 @@ class Player {
 		else this.frameX = 0
 	}
 
+	stepSound(){
+		if (this.moving === true){
+			steps.play()
+			if (this.y >= 360)
+				steps.volume = 1
+			if (this.y < 360)
+				steps.volume = 0.2
+					
+		}
+		if (this.moving === false){
+			steps.pause();
+			steps.currentTime = 0;
+		}
+	}
+
 
 }
 
