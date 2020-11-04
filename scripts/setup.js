@@ -38,6 +38,6 @@ const myInventoryArr = []
 const collidesArr = []
 
 
-//Images & effects
+
 
 
