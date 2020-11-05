@@ -39,6 +39,9 @@ function animate(){
 		collision(player, objectTest)
 		collision(player, objectTest2)
 		collision(player, objectTest3)
+		triggerOne(collidesArr)
+		triggerTwo(player)
+		spider(player)
 	}
 	
 }
@@ -83,4 +86,36 @@ const canvas7 = document.getElementById('canvas7')
 const ctx7 = canvas5.getContext('2d')
 
 
+function triggerOne(arr){
+	if (arr.includes(90)){
+		canvas8.style.visibility = 'visible'; 
+	} else {
+		canvas8.style.visibility='hidden'
+	}
+}
+
+const canvas8 = document.getElementById('trigger')
+const ctx8 = canvas8.getContext('2d')
+
+function triggerTwo(character){
+	if (character.x >= 130 && character.x <=160 && character.y == 110){
+		canvas9.style.visibility = 'visible'; 
+	} else {
+		canvas9.style.visibility='hidden'
+	}
+}
+
+const canvas9 = document.getElementById('trigger2')
+const ctx9 = canvas9.getContext('2d')
+
+function spider(character){
+	if (character.x >= 455 && character.x <=520 && character.y >= 438){
+		canvas10.style.visibility = 'visible'; 
+	} else {
+		canvas10.style.visibility='hidden'
+	} 
+}
+
+const canvas10 = document.getElementById('spider')
+const ctx10 = canvas10.getContext('2d')
 

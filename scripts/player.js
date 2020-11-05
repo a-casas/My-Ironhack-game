@@ -5,8 +5,8 @@ class Player {
 		this.spriteHeight = 252
 		this.width = this.spriteWidth/2
 		this.height = this.spriteHeight/2
-		this.x = 500
-		this.y = 280
+		this.x = 465
+		this.y = 190
 		this.moving = false
 		this.frameX = 0
 		this.frameY = 0
@@ -82,8 +82,7 @@ class Player {
 			steps.currentTime = 0;
 		}
 	}
-
-
+	
 }
 
 const player = new Player()
